@@ -18,7 +18,7 @@ def test_google_negative():
 
 
 def test_yandex():
-        #Тест поиск yandex
+        #Тест поиск yandex111
         browser.open('https://ya.ru ')
         time.sleep(40)
         browser.element('[placeholder="Найдётся всё"]').should(be.blank).type('Погода').press_enter()

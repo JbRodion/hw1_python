@@ -10,7 +10,7 @@ def test_google_positive():
 
 
 def test_google_negative():
-        #Негативный Тест поиска гугл
+        #Негативный Тест поиска !!!!!гугл
         browser.open('https://google.com')
         browser.element('[name="q"]').should(be.blank).type('qwrqt12541trqwtq').press_enter()
         browser.element('.card-section').should(have.text('По запросу qwrqt12541trqwtq ничего не найдено.'))

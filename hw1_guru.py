@@ -20,7 +20,7 @@ def test_google_negative():
 def test_yandex():
         #Тест поиск yandex111
         browser.open('https://ya.ru ')
-        time.sleep(40)
+        time.sleep(25)
         browser.element('[placeholder="Найдётся всё"]').should(be.blank).type('Погода').press_enter()
         browser.element('.weather-forecast__organic').should(have.text('По часам'))
         browser.quit()
